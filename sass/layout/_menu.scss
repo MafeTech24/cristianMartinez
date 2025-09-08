@@ -1,0 +1,26 @@
+/** Barra de Navegación - Bootstrap ***/
+.navbar {
+    background-color: $silverBlue;
+    .navbar-brand{
+        @include wh(80px,80px);
+    }    
+    .nav-link {
+        text-decoration: none;
+        color: $gunmetal;
+        font-weight: map-get($map: $parrafo-p, $key: negrita);
+        &:hover,
+        #enlace:hover{
+            @include hover-uno;            
+            @include ampltext2;
+        }
+    }
+    .navbar-toggler {
+        border: $ninguno; 
+        border-radius: $cero;
+        outline: none;
+    }    
+}
+
+
+
+

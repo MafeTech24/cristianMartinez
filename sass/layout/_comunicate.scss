@@ -1,0 +1,29 @@
+/***** Comunicate ****/
+.parrafo {
+    text-align: map-get($map: $parrafo-p, $key: justif);
+    line-height: map-get($map: $parrafo-p , $key: interlineado);
+    font-family: $fuente-sec;
+    font-weight: $fdelagado;
+    .t-negrita {
+        font-family: $fuente-sec;
+        font-style: normal;
+        font-weight: $negr2;
+    }
+    .resaltar {
+        font-size: $fta-grande2;
+            font-style: $fcursiva;
+            font-family: $fuente-princ;
+            box-shadow: map-get($map: $parrafo-p, $key: resalta);
+            text-shadow: map-get($map: $parrafo-p, $key: sombra1);          
+    }    
+}
+.botones .btn {
+    @include boton;
+    @include wh(200px,50px);
+    @include ampl2;
+    &:hover {
+        color: $silverBlue;
+        @include anim-hover1;
+    }
+}
+
